@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KMS Development</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="brace">{</span>KMS<span class="brace">}</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="section hero-section">
+    <div class="hero-content">
+      <div class="logo-container">
+        <div class="logo-glow"></div>
+        <div class="kms-logo">
+          <span class="logo-brace">{</span>
+          <span class="logo-letters">KMS</span>
+          <span class="logo-brace">}</span>
+        </div>
+        <p class="logo-sub">DEVELOPMENT</p>
+      </div>
+      <h1 class="hero-heading">
+        <span class="line1">Crafting Digital</span>
+        <span class="line2">Experiences</span>
+      </h1>
+      <p class="hero-desc">We build powerful, elegant software solutions that push boundaries and define the future.</p>
+      <a href="#projects" class="cta-btn">
+        <span>Explore</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-ring ring1"></div>
+      <div class="orbit-ring ring2"></div>
+      <div class="orbit-ring ring3"></div>
+      <div class="orbit-dot d1"></div>
+      <div class="orbit-dot d2"></div>
+      <div class="orbit-dot d3"></div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">Who We Are</div>
+      <h2 class="section-title">About <span class="gold">KMS</span></h2>
+      <div class="about-grid">
+        <div class="about-text glass-card">
+          <p>KMS Development is a software studio focused on building high-quality digital products. From web applications to custom platforms, we approach every project with precision, creativity, and a deep commitment to quality.</p>
+          <p>Our team blends technical excellence with thoughtful design to deliver software that doesn't just work — it inspires.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card glass-card">
+            <span class="stat-num" data-target="12">0</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-num" data-target="5">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-num" data-target="100">0</span>
+            <span class="stat-label">% Committed</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-num" data-target="8">0</span>
+            <span class="stat-label">Core Technologies</span>
+          </div>
+        </div>
+      </div>
+      <div class="tech-row">
+        <span class="tech-pill">React</span>
+        <span class="tech-pill">Node.js</span>
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">TypeScript</span>
+        <span class="tech-pill">PostgreSQL</span>
+        <span class="tech-pill">AWS</span>
+        <span class="tech-pill">Docker</span>
+        <span class="tech-pill">GraphQL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">What We're Building</div>
+      <h2 class="section-title">Projects <span class="gold">in Development</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" data-delay="0">
+          <div class="project-badge">In Development</div>
+          <div class="project-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="url(#g1)" stroke-width="2"/><path d="M16 24l6 6 10-12" stroke="url(#g1)" stroke-width="2.5" stroke-linecap="round"/><defs><linearGradient id="g1" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#f0a500"/><stop offset="1" stop-color="#c47c00"/></linearGradient></defs></svg>
+          </div>
+          <h3>Nexus Platform</h3>
+          <p>A unified workspace platform connecting teams, tools, and data in one seamless environment. Built for scale.</p>
+          <div class="project-tags"><span>React</span><span>Node.js</span><span>GraphQL</span></div>
+          <div class="project-progress">
+            <div class="progress-label"><span>Progress</span><span>68%</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="--w:68%"></div></div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card featured" data-delay="100">
+          <div class="project-badge featured-badge">Featured</div>
+          <div class="project-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="8" stroke="url(#g2)" stroke-width="2"/><path d="M15 24h18M24 15v18" stroke="url(#g2)" stroke-width="2.5" stroke-linecap="round"/><defs><linearGradient id="g2" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#f0a500"/><stop offset="1" stop-color="#ffd700"/></linearGradient></defs></svg>
+          </div>
+          <h3>Atlas CMS</h3>
+          <p>A next-generation content management system with AI-assisted workflows and an intuitive visual editor.</p>
+          <div class="project-tags"><span>TypeScript</span><span>Python</span><span>AWS</span></div>
+          <div class="project-progress">
+            <div class="progress-label"><span>Progress</span><span>45%</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="--w:45%"></div></div>
+          </div>
+        </div>
+
+        <!-- Games Card -->
+        <a href="https://krishnamohan333.github.io/KMS-company/" target="_blank" rel="noopener noreferrer" class="project-card game-card glass-card" data-delay="300">
+          <div class="project-badge game-badge">Games Studio</div>
+          <div class="project-icon game-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="4" y="14" width="40" height="24" rx="8" stroke="url(#gg)" stroke-width="2"/>
+              <path d="M16 22v6M13 25h6" stroke="url(#gg)" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="32" cy="23" r="2" fill="url(#gg)"/>
+              <circle cx="36" cy="27" r="2" fill="url(#gg)"/>
+              <defs>
+                <linearGradient id="gg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#f0a500"/><stop offset="1" stop-color="#ffd700"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3>KMS Games</h3>
+          <p class="game-placeholder-text">To make it accurate, tell me what games you currently have or are planning to develop — for example, the game names, genre, platform (Android / PC / PlayStation), and a one-line description of each.</p>
+          <div class="project-tags"><span>Android</span><span>PC</span><span>PlayStation</span></div>
+          <div class="game-cta">
+            View Games Portfolio
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT OVERLAY -->
+  <div id="contactOverlay" class="contact-overlay" aria-hidden="true">
+    <div class="contact-overlay-inner" role="dialog" aria-modal="true" aria-label="Contact Us">
+      <button class="contact-close" id="contactClose" aria-label="Close contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <section id="contact" class="section contact-section-inner">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Contact <span class="gold">Us</span></h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item glass-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l9 6 9-6M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z"/></svg>
+            </div>
+            <div>
+              <span class="ci-label">Email</span>
+              <span class="ci-value">kms.development333.in@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+            </div>
+            <div>
+              <span class="ci-label">Location</span>
+              <span class="ci-value">Sheikhpura, Bihar, India - 811105</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="f17c384a-6a1a-4cf0-b28a-9da317b72613" />
+          <input type="hidden" name="subject" value="New message from KMS Development website" />
+          <input type="checkbox" name="botcheck" style="display:none" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Message sent! We'll be in touch soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+    </div><!-- /.contact-overlay-inner -->
+  </div><!-- /#contactOverlay -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <span class="brace">{</span>KMS<span class="brace">}</span>
+      <span class="footer-name">Development</span>
+    </div>
+    <p class="footer-copy">&copy; 2026 KMS Development. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
